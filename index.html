@@ -1,7 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitt CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .header {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .contact-info, .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills ul li {
+            background-color: #eee;
+            padding: 5px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container">
+        <!-- Rubrik -->
+        <div class="header">
+            <h1>Förnamn Efternamn</h1>
+            <p>Yrkesroll/Titel</p>
+        </div>
+
+        <!-- Kontaktinformation -->
+        <div class="section">
+            <h2>Kontaktinformation</h2>
+            <ul class="contact-info">
+                <li><strong>E-post:</strong> exempel@mail.com</li>
+                <li><strong>Telefon:</strong> 070-123 45 67</li>
+                <li><strong>Adress:</strong> Gatuadress, Postnummer, Stad</li>
+                <li><strong>LinkedIn:</strong> <a href="#">LinkedIn-profil</a></li>
+            </ul>
+        </div>
+
+        <!-- Sammanfattning -->
+        <div class="section">
+            <h2>Sammanfattning</h2>
+            <p>En kort beskrivning av dina erfarenheter, styrkor och vad du söker i din karriär. Anpassa detta avsnitt för att lyfta fram varför du är den perfekta kandidaten.</p>
+        </div>
+
+        <!-- Erfarenhet -->
+        <div class="section">
+            <h2>Arbetserfarenhet</h2>
+            <h3>Företagsnamn, Stad</h3>
+            <p><em>Jobbtitel | Månad År - Månad År</em></p>
+            <ul>
+                <li>Beskriv dina arbetsuppgifter och ansvar.</li>
+                <li>Framhäv eventuella prestationer eller bidrag.</li>
+            </ul>
+
+            <h3>Företagsnamn, Stad</h3>
+            <p><em>Jobbtitel | Månad År - Månad År</em></p>
+            <ul>
+                <li>Beskriv dina arbetsuppgifter och ansvar.</li>
+                <li>Framhäv eventuella prestationer eller bidrag.</li>
+            </ul>
+        </div>
+
+        <!-- Utbildning -->
+        <div class="section">
+            <h2>Utbildning</h2>
+            <h3>Skolans namn, Stad</h3>
+            <p><em>Utbildning eller examen | Månad År - Månad År</em></p>
+            <p>Beskriv din utbildning och eventuella prestationer här.</p>
+        </div>
+
+        <!-- Färdigheter -->
+        <div class="section skills">
+            <h2>Färdigheter</h2>
+            <ul>
+                <li>Färdighet 1</li>
+                <li>Färdighet 2</li>
+                <li>Färdighet 3</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
