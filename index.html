@@ -6,7 +6,7 @@
     <title>Min Personliga Hemsida</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+          font-family: Circular,Lato,sans-serif;
             margin: 0;
             padding: 0;
             background-color: #F4F4F4;
@@ -48,7 +48,6 @@
           color: #18222F;
           cursor: pointer;
           display: inline-block;
-          font-family: Circular,Helvetica,sans-serif;
           font-size: 1.125rem;
           font-weight: 700;
           letter-spacing: -.01em;
@@ -127,6 +126,13 @@
           color: #18222F;
             text-align: justify;
         }
+        .projectContainer{
+          display:flex;
+          flex-direction:row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-content: space-around;
+        }
         .project ul {
             list-style-type: none;
             padding: 0;
@@ -153,21 +159,17 @@
         /* CSS */
         .projectItem {
           align-self:center;
-          background: #fff;
+          background: #e0e0e0;
           backface-visibility: hidden;
           border-radius: .375rem;
-          border-style: solid;
+          /* border-style: solid; */
           border-width: .125rem;
           box-sizing: border-box;
           color: #18222F;
-          cursor: pointer;
           display: inline-block;
-          font-family: Circular,Helvetica,sans-serif;
-          font-size: 1.125rem;
-          font-weight: 700;
           letter-spacing: -.01em;
           line-height: 1.3;
-          padding: 20 1.125rem;
+          padding: 1em 1em;
           position: relative;
           text-align: left;
           text-decoration: none;
@@ -176,6 +178,9 @@
           user-select: none;
           -webkit-user-select: none;
           touch-action: manipulation;
+          width: 33em;
+          margin-bottom:1em;
+
         }
 
         .projectItem:not(:disabled):hover {
@@ -245,7 +250,40 @@
         <!-- Projekt sektion -->
         <section class="project">
             <h2>Projects</h2>
-            <div class="projectItem" role="button">item1 </div>
+            <p> A portfolio of some of the projects I've done during my recent years, varying in size.
+            <div class="projectContainer">
+            <div class="projectItem" role="button"><h3> MechaHive </h3>
+              <p> A full game developed for the course TDDD23. This game was also submitted to the Liu Game Awards, where it got to the finals. Developed in Unity using C# </p>
+              <iframe width="100%" height="300px"
+              src="https://www.youtube.com/embed/TceLJ65fHuA?autoplay=1&mute=1&controls=0&loop=1">
+              </iframe>
+             </div>
+             <div class="projectItem" role="button"><h3> Fluid simulation </h3>
+               <p> Developed in C++. </p>
+              </div>
+              <div class="projectItem" role="button"><h3> Particlesystem </h3>
+                <p> Developed in C++. </p>
+              </div>
+              <div class="projectItem" role="button"><h3> Digital card game </h3>
+               <p> Developed in Unity using C# </p>
+              </div>
+              <div class="projectItem" role="button"><h3> Classification of handwritten numbers </h3>
+                <p> Project was developed using Matlab. </p>
+              </div>
+              <div class="projectItem" role="button"><h3> Crowd simulation </h3>
+                <p> Project was developed partially in Houdini and 3DS Max. </p>
+              </div>
+              <div class="projectItem" role="button"><h3> Procedurally generated terrain </h3>
+                <p> Developed in C/C++. </p>
+              </div>
+              <div class="projectItem" role="button"><h3> Physical Clock simulation </h3>
+                <p> Developed mainly in Unity using C#, though a lot of the computation was done using Matlab. </p>
+              </div>
+              <div class="projectItem" role="button"><h3> Widget creation in react </h3>
+                <p> Developed in Android studio using react. </p>
+              </div>
+            </div>
+                <!--
             <ul>
                 <li>
                     <strong>Free time project:</strong> desc. img caro. <a href="#">Se på GitHub</a> | <a href="#">Live-demo</a>
@@ -256,7 +294,7 @@
                 <li>
                     <strong>School project:</strong> desc. img <a href="#">Se på GitHub</a> | <a href="#">Live-demo</a>
                 </li>
-            </ul>
+            </ul> -->
         </section>
 
         <!-- Kontakt sektion -->
