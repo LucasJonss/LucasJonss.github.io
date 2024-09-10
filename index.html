@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Personliga Hemsida</title>
+    <title>Lucas Jonsson Portfolio</title>
     <style>
         body {
           font-family: Circular,Lato,sans-serif;
@@ -109,7 +109,7 @@
             padding-bottom: 10px;
             color: #18222F;
         }
-        img {
+        #pb {
             float: left;
             margin-right: 20px;
             width: 150px;
@@ -156,7 +156,6 @@
         .social-links a:hover {
             text-decoration: underline;
         }
-        /* CSS */
         .projectItem {
           align-self:center;
           background: #e0e0e0;
@@ -184,12 +183,9 @@
         }
 
         .projectItem:not(:disabled):hover {
-          transform: scale(1.05);
+          transform: scale(1.1);
         }
 
-        .projectItem:not(:disabled):hover:active {
-          transform: scale(1.05) translateY(.125rem);
-        }
 
         .projectItem:focus {
           outline: 0 solid transparent;
@@ -214,16 +210,15 @@
         }
 
         .projectItem:not(:disabled):active {
-          transform: translateY(.125rem);
+          /*transform: translateY(.125rem);*/
         }
 }
 
     </style>
 </head>
 <body>
-    <!-- Header sektion -->
     <header>
-      <img src="pb.png" alt="Bild av mig">
+      <img id="pb" src="pb2.png" alt="Bild av mig">
       <div id="minibox">
         <h1>Lucas Jonsson</h1>
         <p>M.Sc student in Media technology and Engineering. </p>
@@ -231,7 +226,7 @@
     </header>
 
     <div class="container">
-        <!-- Om mig sektion -->
+
         <section class="about">
 
             <!--<p> <strong> Hello! </strong> <br><br> -->
@@ -244,43 +239,78 @@
                 <br> Currently, I am starting my transition into the next chapter of my life,
                 scouting for work experience where I can apply the skills that I've learnt during my studies in a professional setting, and create social connections along the way.
               </p>
-                <button class="button" role="button">Resume</button>
+                <button class="button" role="button">Resumé</button>
         </section>
 
-        <!-- Projekt sektion -->
+
         <section class="project">
             <h2>Projects</h2>
-            <p> A portfolio of some of the projects I've done during my recent years, varying in size.
+            <p> A brief portfolio of some of the projects I've done during my recent years, varying in scope.
             <div class="projectContainer">
             <div class="projectItem" role="button"><h3> MechaHive </h3>
-              <p> A full game developed for the course TDDD23. This game was also submitted to the Liu Game Awards, where it got to the finals. Developed in Unity using C# </p>
+              <p> A full game developed for the course TDDD23. This game was also submitted to the Liu Game Awards, where it reached the finals. Developed in Unity using C# </p>
               <iframe width="100%" height="300px"
-              src="https://www.youtube.com/embed/TceLJ65fHuA?autoplay=1&mute=1&controls=0&loop=1">
+              src="https://www.youtube.com/embed/TceLJ65fHuA?autoplay=1&mute=1&controls=0&loop=1&playlist=TceLJ65fHuA">
               </iframe>
              </div>
-             <div class="projectItem" role="button"><h3> Fluid simulation </h3>
-               <p> Developed in C++. </p>
-              </div>
-              <div class="projectItem" role="button"><h3> Particlesystem </h3>
-                <p> Developed in C++. </p>
-              </div>
-              <div class="projectItem" role="button"><h3> Digital card game </h3>
-               <p> Developed in Unity using C# </p>
-              </div>
+             <div class="projectItem" role="button"><h3> Data visualization User Interface </h3>
+               <p> A user interface for visualization of different data sets such as temperature and pressure over Norrköping city, developed using JS and Cecium.  </p>
+               <img src="ceciumg.gif" alt="dataviz" width="100%" height="300px">
+             </div>
+             <div class="projectItem" role="button"><h3> Particlesystem </h3>
+               <p> A lab was to create a particle system, in which there was an emphasis on the structure of the application, so that it would be customizable and usable as an actual tool.
+                 This was developed in a group in C++. </p>
+               <img src="particlesystemg.gif" alt="dataviz" width="100%" height="300px">
+             </div>
+             <div class="projectItem" role="button"><h3> Physi-Digital card game </h3>
+              <p> As part of my bachelors group project we developed a card game, ment to be played both physically and digitally. The game featured physical cards,
+                played on a large touch screen used as a table, which had the interface displayed. Players interacted with the game touching buttons, and playing cards which were scanned by a camera to allow the software
+                to know which cards were being played, using image recognition.
+                Developed in Unity using C#. </p>
+              <img src="kand.jpg" alt="dataviz" width="100%" height="300px">
+             </div>
+
+
+              <div class="projectItem" role="button"><h3> Navier stokes simulation </h3>
+                <p> Fluids can be faked in many ways, here its fully simulated using Navier stokes equation with a fluid and a container represented by level set objects. Developed in C++.  </p>
+                <img src="fluidsimg.gif" alt="A simulation of a fluid" width="100%" height="300px">
+               </div>
+               <div class="projectItem" role="button"><h3> Crowd simulation </h3>
+                 <p> A group project for the course TNM085, a offline render tech demo for inverse kinematics, ragdolling and large crowds. Project was developed partially in Houdini and 3DS Max using CAT. </p>
+                 <iframe width="100%" height="300px"
+                 src="https://www.youtube.com/embed/_xhCnLsXcjI?autoplay=1&mute=1&controls=0&loop=1&playlist=_xhCnLsXcjI">
+                 </iframe>
+               </div>
               <div class="projectItem" role="button"><h3> Classification of handwritten numbers </h3>
-                <p> Project was developed using Matlab. </p>
+                <p> Training data of handwritten numbers such as the ones on the
+                  image below was used to classify test data, using different methods. This was done as part of a lab in the course TNA005, in which the different methods used was evaluated and compared in Matlab.
+                </p>
+                <img src="klassific.png" alt="klocksimulering" width="100%" height="300px">
               </div>
-              <div class="projectItem" role="button"><h3> Crowd simulation </h3>
-                <p> Project was developed partially in Houdini and 3DS Max. </p>
-              </div>
+
+
               <div class="projectItem" role="button"><h3> Procedurally generated terrain </h3>
-                <p> Developed in C/C++. </p>
+                <p> Procedurally generated terrain, with procedurally generated trees, creating an archipelago. The mesh for the terrain was generated using noise and the
+                  trees were generated by a fractal method using recursion. The water is also animated with kernel waves, which was done in fragment shaders. Developed in C. </p>
+                <img src="archipelb.png" alt="generated terrain" width="100%" height="300px">
               </div>
               <div class="projectItem" role="button"><h3> Physical Clock simulation </h3>
-                <p> Developed mainly in Unity using C#, though a lot of the computation was done using Matlab. </p>
+                <p> An accurate model of the inner workings of a physical clock. A lot of precomputation had to be made to accurately get the ratios between the cogs, which was done in Matlab.
+                  Visualization was done in Unity. </p>
+                <img src="klockvisg.gif" alt="klocksimulering" width="100%" height="300px">
               </div>
-              <div class="projectItem" role="button"><h3> Widget creation in react </h3>
-                <p> Developed in Android studio using react. </p>
+              <div class="projectItem" role="button"><h3> React widgets </h3>
+                <p> Widgets created in Android Studio for phones, created as default tools for apps or webpages using React. Showcased below is a carousel widget and a shopping cart widget, being used together. </p>
+                <div style="display:flex">
+                <video width="100%" height="450px" muted loop autoplay>
+                  <source src="UX.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video width="100%" height="450px" muted loop autoplay>
+                  <source src="ux1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
               </div>
             </div>
                 <!--
@@ -297,14 +327,14 @@
             </ul> -->
         </section>
 
-        <!-- Kontakt sektion -->
+
         <section class="contact">
             <h2>Contact</h2>
             <p><strong>E-mail:</strong> <a href="#">Lucas Jonsson</a></p>
         </section>
     </div>
 
-    <!-- Footer med sociala medier -->
+
     <footer>
         <div class="social-links">
             <a href="#">GitHub</a>
